@@ -1,1 +1,1 @@
-This repository has the tools developed for the experiments.
+This repository contains the tools developed for the experiments.
