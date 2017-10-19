@@ -50,6 +50,7 @@ def io_rate_collector(p):
 # Instantaneous power collector
 #
 def power_collector():
+    # Select the auxiliar scripts:
     os.system("/usr/sbin/ipmi-dcmi --get-system-power-statistics | grep Current | awk '{print $4}' >> power.dat")
     os.system("./temp_sgi.sh")
 #
