@@ -51,7 +51,7 @@ def io_rate_collector(p):
 #
 def power_collector():
     os.system("/usr/sbin/ipmi-dcmi --get-system-power-statistics | grep Current | awk '{print $4}' >> power.dat")
-    os.system("./temperature.sh")
+    os.system("./temp_sgi.sh")
 #
 # Writer output file
 #
