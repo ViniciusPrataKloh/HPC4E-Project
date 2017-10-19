@@ -1,1 +1,1 @@
-This repository contains the tools developed for the experiments.
+This repository contains the performance and power profiling tool
