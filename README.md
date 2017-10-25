@@ -91,9 +91,9 @@ Defining the command:
 	`}`
 
 Defining the service:
-	`define service{`
-		`use			local-service`
-		`service_description	Service Info`
-		`host_name		localhost`
-		`check_command		check_proc_performance`
-	`}`
+	`define service{ <br />
+		use			local-service <br />
+		service_description	Service Info <br />
+		host_name		localhost <br />
+		check_command		check_proc_performance <br />
+	}`
