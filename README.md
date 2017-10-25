@@ -53,11 +53,7 @@ sudo python3 process_monitor.py [PROCESS_NAME] [LAUNCHER_NAME]
 
 ## Description
 
-According to Nagios documentation (Nagios Core Development Team and Community Contribu-
-tors, 2016), there is a native plugin (check proc) to monitor a specific process in Linux. However,
-after several unsuccessfully attempts to use this one, we chose to create our own plugin. The plugin,
-named check proc performance, monitor a specific process in Linux and show what percentage the
-process is using of CPU, Memory and I/O, while it is running.
+According to Nagios documentation (Nagios Core Development Team and Community Contributors, 2016), there is a native plugin (check proc) to monitor a specific process in Linux. However, after several unsuccessfully attempts to use this one, we chose to create our own plugin. The plugin, named check proc performance, monitor a specific process in Linux and show what percentage the process is using of CPU, Memory and I/O, while it is running.
 
 ## Goals
 
