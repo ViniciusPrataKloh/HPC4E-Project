@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file=/home/nvidia/Testes_ARM/Monitor/power.dat
+file=[OUTPUT_DIRECTORY]/power.dat
 
 date +%H:%M:%S.%N >> $file
 echo -n "Total:" >> $file
