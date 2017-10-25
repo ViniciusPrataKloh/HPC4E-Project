@@ -1,29 +1,29 @@
-## Summary
+# Summary
 
 * [1] Performance and Power Profiling Tool - CPU Module
 * [2] Performance and Power Profiling Tool - GPU Module
 * [3] Nagios plugin
 
 
-## [1],[2] Performance and Power Profiling Tool - CPU and GPU Module
+# [1],[2] Performance and Power Profiling Tool - CPU and GPU Module
 
 *GitHub: https://github.com/ViniciusPrataKloh/HPC4E-Project/
 *[1] @Author: Vinícius Prata Klôh - vinicius.prata.kloh@gmail.com
 *[2] @Author: André Yokoyama - andre.yokoyama.ist@gmail.com
 
-# Goals
+## Goals
 
 * Collect the hardware parammeters (CPU and Memory usage, I/O disk and network)
 * Collect the sensors reading (Power and Temperature)
 * Analyze data
 
-# Dependencies:
+## Dependencies:
 
 ```shell
 sudo apt-get install gcc python3-psutil freeipmi
 ```
 
-# Usage
+## Usage
 
 The process_monitor.py file has a function to be selected the auxiliar script that can collects the sensors reading.
 
@@ -44,19 +44,19 @@ The output files are:
 	* power.dat
 	* temperature.dat
 
-# Running
+## Running
 
 ```shell
 sudo python3 process_monitor.py [PROCESS_NAME] [LAUNCHER_NAME]
 ```
 
 
-## [3] Nagios check_proc_performance plugin
+# [3] Nagios check_proc_performance plugin
 
 GitHub: https://github.com/ViniciusPrataKloh/HPC4E-Project/
 @Author: Vinícius Prata Klôh - vinicius.prata.kloh@gmail.com
 
-# Goals
+## Goals
 
 * Collect the hardware parammeters (CPU and Memory usage)
 * Alert the Nagios server with four states:
@@ -66,12 +66,12 @@ GitHub: https://github.com/ViniciusPrataKloh/HPC4E-Project/
 	* 3 - "UNKNOWN"
 * Analyze data
 
-# Dependencies
+## Dependencies
 
 * top programm - https://linux.die.net/man/1/top
 * iotop programm - https://linux.die.net/man/1/iotop
 
-# Usage
+## Usage
 
 Configure the Nagios server to use this plugin as a service.
 
@@ -82,18 +82,18 @@ Options to be used
 	`-x The warning for Memory percentage`
 	`-y The critica for Memory percentage`
 
-# Example
+## Example
 
 Defining the command:
-	`define command{`
-		`command_name	check_proc_performance`
-		`command_line	$USER1$/check_proc_performance -p [PROCESS_NAME] -w 80 -c 90 -x 80 -y 90`
-	`}`
+	`define command{
+		command_name	check_proc_performance
+		command_line	$USER1$/check_proc_performance -p [PROCESS_NAME] -w 80 -c 90 -x 80 -y 90
+	}`
 
 Defining the service:
-	`define service{ <br />
-		use			local-service <br />
-		service_description	Service Info <br />
-		host_name		localhost <br />
-		check_command		check_proc_performance <br />
+	`define service
+		use			local-service
+		service_description	Service Info
+		host_name		localhost
+		check_command		check_proc_performance
 	}`
