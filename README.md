@@ -75,26 +75,25 @@ GitHub: https://github.com/ViniciusPrataKloh/HPC4E-Project/
 
 Configure the Nagios server to use this plugin as a service.
 
-Options to be used `
-	-p The process name
-	-w The warning for CPU percentage
-	-c The critical for CPU percentage
-	-x The warning for Memory percentage
-	-y The critica for Memory percentage
-	`
+Options to be used 
+	`-p The process name`
+	`-w The warning for CPU percentage`
+	`-c The critical for CPU percentage`
+	`-x The warning for Memory percentage`
+	`-y The critica for Memory percentage`
 
 # Example
 
 Defining the command:
-	`define command{
-		command_name	check_proc_performance
-		command_line	$USER1$/check_proc_performance -p [PROCESS_NAME] -w 80 -c 90 -x 80 -y 90
-	}`
+	`define command{`
+		`command_name	check_proc_performance`
+		`command_line	$USER1$/check_proc_performance -p [PROCESS_NAME] -w 80 -c 90 -x 80 -y 90`
+	`}`
 
 Defining the service:
-	`define service{
-		use			local-service
-		service_description	Service Info
-		host_name		localhost
-		check_command		check_proc_performance
-	}`
+	`define service{`
+		`use			local-service`
+		`service_description	Service Info`
+		`host_name		localhost`
+		`check_command		check_proc_performance`
+	`}`
