@@ -21,7 +21,7 @@ Exit Code
 
 function Status {
 	case $EXITCODE in
-			0) EXITSTATUS="OK" ;;
+		0) EXITSTATUS="OK" ;;
 	        1) EXITSTATUS="WARNING" ;;
 	        2) EXITSTATUS="CRITICAL";;
 	        3) EXITSTATUS="UNKNOWN" ;;
