@@ -1,7 +1,7 @@
 # Summary
 
 * [1] Performance and Power Profiling Tool - CPU Module
-* [2] Nagios plugin
+* [2] Nagios check_proc_performance Plugin
 
 
 # [1] Performance and Power Profiling Tool - CPU Module
