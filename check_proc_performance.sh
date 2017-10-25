@@ -7,7 +7,7 @@ Options to be used
 	-w The warning for CPU percentage
 	-c The critical for CPU percentage
 	-x The warning for Memory percentage
-	-y The critica for Memory percentage
+	-y The critical for Memory percentage
 
 Exit Code
 	0 - OK
