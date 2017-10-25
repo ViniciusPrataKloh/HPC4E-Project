@@ -24,7 +24,7 @@ sudo apt-get install gcc python3-psutil freeipmi
 
 ## Usage
 
-The process_monitor.py file has a function to be selected the auxiliar script that can collects the sensors reading.
+The process_monitor.py file has a function that can be selected the auxiliar script to collect the sensors reading. Other scripts can be developeds and called in this functions.
 
 * To collect the power, use:
 	- `os.system("/usr/sbin/ipmi-dcmi --get-system-power-statistics | grep Current | awk '{print $4}' >> power.dat")`
