@@ -7,9 +7,8 @@
 
 # [1],[2] Performance and Power Profiling Tool - CPU and GPU Module
 
-*GitHub: https://github.com/ViniciusPrataKloh/HPC4E-Project/
-*[1] @Author: Vinícius Prata Klôh - vinicius.prata.kloh@gmail.com
-*[2] @Author: André Yokoyama - andre.yokoyama.ist@gmail.com
+## Description
+The form to collect the data from the internal sensors and the hardware parameters, for each computational architecture, differ from each other. For this reason, it was developed a performance and power profiling tool based on different modules to collect these parameters, so that the hardware parameters and the internal sensors were collected in a more homogeneous way as possible. The tool was designed to address the need for fine-grained power profiling on parallel and distributed system and the need to correlate with performance profiling. The approach to monitor performance of applications consists of online monitoring and directly method. The tool was developed based on two different modules that enable profile both CPUs and GPUs using the internal sensors. It has very low overhead and high sampling rate.
 
 ## Goals
 
@@ -52,9 +51,6 @@ sudo python3 process_monitor.py [PROCESS_NAME] [LAUNCHER_NAME]
 
 
 # [3] Nagios check_proc_performance plugin
-
-GitHub: https://github.com/ViniciusPrataKloh/HPC4E-Project/
-@Author: Vinícius Prata Klôh - vinicius.prata.kloh@gmail.com
 
 ## Goals
 
