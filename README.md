@@ -49,7 +49,7 @@ sudo python3 process_monitor.py [PROCESS_NAME] [LAUNCHER_NAME]
 ```
 
 
-# [3] Nagios check_proc_performance plugin
+# [2] Nagios check_proc_performance plugin
 
 ## Description
 
