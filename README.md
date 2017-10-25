@@ -39,9 +39,9 @@ The process_monitor.py file has a function that can be selected the auxiliar scr
 The launcher is responsable to run the application.
 
 The output files are:
-	* [PROCESS_NAME.dat]
-	* power.dat
-	* temperature.dat
+* [PROCESS_NAME.dat]
+* power.dat
+* temperature.dat
 
 ## Running
 
@@ -76,7 +76,7 @@ Options to be used
 	`-w The warning for CPU percentage`
 	`-c The critical for CPU percentage`
 	`-x The warning for Memory percentage`
-	`-y The critica for Memory percentage`
+	`-y The critical for Memory percentage`
 
 ## Example
 
