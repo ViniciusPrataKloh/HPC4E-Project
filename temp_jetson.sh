@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file=/home/nvidia/Testes_ARM/Monitor/temperature.dat
+file=[OUTPUT_DIRECTORY]/temperature.dat
 
 date +%H:%M:%S.%N >> $file
 echo -n "BCPU:" >> $file
